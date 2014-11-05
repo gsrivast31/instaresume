@@ -1,0 +1,53 @@
+<!-- Main (Home) section -->
+<div class="section" id="home">
+    <div class="container" id="home-container">
+        <div class="row">
+            <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">   
+                <h1 class="title">InstaResume</h1>
+                <h2 class="subtitle">....create your resumes in seconds</h2>
+                <br><br>
+                <div class="signup">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <div class="col-md-6 col-md-offset-3">
+                            <a class="btn btn-social btn-linkedin" href="/auth/linkedin"><i class="fa fa-linkedin"></i>Sign in with LinkedIn</a>  
+                        </div>
+                    </div>
+                    <form class="col-md-6 col-md-offset-3" id="loginForm">
+                        <hr />
+                        <div>
+                            <div class="form-group">
+                                <input type="text" class="form-control input-lg" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control input-lg" placeholder="Password" name="password">
+                            </div>
+                        </div>
+                        {{#if message.length}}
+                            <div class="alert alert-danger">{{message}}</div>
+                        {{/if}}
+                        <div class="form-group col-md-5">
+                            <input id="signin" type="submit" value="Sign In" class="form-control submit"</input>
+                        </div>
+                        <label class="col-md-2">OR</label>
+                        <div class="form-group col-md-5">
+                            <input id="signup"  type="submit" value="Sign Up" class="form-control submit"</input>
+                        </div>
+                    </form>
+                </div>
+            </div> <!-- /col -->
+        </div> <!-- /row -->
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <span><p class="copyright text-muted text-center small">&copy; 2014 InstaResume. All Rights Reserved</p></span>
+    </div>
+</div>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.72241.js"></script>
+<script src="js/home.js"></script>

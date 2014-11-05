@@ -1,0 +1,18 @@
+<ul>
+	<li><label>Position</label><input type="text" name="position" placeholder="Ex. Front End Developer" value="{{role}}"/><li>	
+	<li><label>Company</label><input type="text" name="currentPos" placeholder="Ex. Google, India" value="{{company}}" /><li>
+	<li><label>Location</label><input type="text" name="location" placeholder="Ex. Bangalore, India" value="{{location}}" /><li>
+	<li><label>Time Period</label>
+		<select id="employ_month_from" class="select_10" name="employ_month_from">
+			{{{monthSelect month_from}}}
+		</select>
+		<input type="text" name="employ_year_from" id="employ_year_from" placeholder="Year" value="{{year_from}}" />
+		<label class="to">to</label>
+		<select id="employ_month_to" class="select_10" name="employ_month_to">
+			{{{monthSelect month_to}}}
+		</select>
+		<input type="text" name="employ_year_to" id="employ_year_to" placeholder="Year" value="{{year_to}}" />
+	<li>
+	<li><label>Description</label><input type="text" name="description" placeholder="Describe what you do" value="{{description}}"/><li>	
+</ul>
+<hr>

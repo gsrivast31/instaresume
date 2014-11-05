@@ -1,0 +1,20 @@
+<ul>
+	<li><label>College Name</label><input type="text" name="college" placeholder="Ex. IIT Delhi" value="{{schoolName}}"/><li>
+	<li><label>Degree</label><input type="text" name="degree" placeholder="Ex. Google, India" value="{{degree}}" /><li>
+	<li><label>Field</label><input type="text" name="field" placeholder="Ex. Computer Science" value="{{field}}" /><li>
+
+	<li>
+		<label>Time Period</label>
+		<select id="degree_month_from" class="select_10" name="degree_month_from">
+			{{{monthSelect month_from}}}
+		</select>
+		<input type="text" name="degree_year_from" id="degree_year_from" placeholder="Year" value="{{year_from}}" />
+		<label class="to">to</label>
+		<select id="degree_month_to" class="select_10" name="degree_month_to">
+			{{{monthSelect month_to}}}
+		</select>
+		<input type="text" name="degree_year_to" id="degree_year_to" placeholder="Year" value="{{year_to}}" />
+	<li>
+	<li><label>Percentage</label><input type="text" name="percentage" placeholder="Your percentage or CGPA" value="{{percentage}}" /><li>													
+</ul>
+<hr>
